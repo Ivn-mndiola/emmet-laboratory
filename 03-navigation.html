@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation and Operators | Ivan Dave Mendiola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <h1>My Web Development Journey</h1>
+        <p>I am learning HTML, CSS, JavaScript, and web development.</p>
+    </header>
+    <nav aria-label="Part 6 navigation challenge">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Child, Sibling, and Multiplication Operators</h2>
+            <p>The examples below show how Emmet generates nested and repeated elements.</p>
+            <div class="practice-grid">
+                <section class="panel" aria-labelledby="child-title">
+                    <h3 id="child-title">Children: <code>&gt;</code></h3>
+                    <ul>
+                        <li>One child list item</li>
+                    </ul>
+                    <nav aria-label="Single-child demonstration">
+                        <ul>
+                            <li>One navigation item</li>
+                        </ul>
+                    </nav>
+                    <nav aria-label="Five-child demonstration">
+                        <ul>
+                            <li>Navigation item 1</li>
+                            <li>Navigation item 2</li>
+                            <li>Navigation item 3</li>
+                            <li>Navigation item 4</li>
+                            <li>Navigation item 5</li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="panel" aria-labelledby="sibling-title">
+                    <h3 id="sibling-title">Siblings: <code>+</code></h3>
+                    <p>Use <code>h1+h2+p+p</code> to create two headings and two paragraphs at the same level.</p>
+                    <h3>First sibling heading</h3>
+                    <h3>Second sibling heading</h3>
+                    <p>First sibling paragraph.</p>
+                    <p>Second sibling paragraph.</p>
+                </section>
+                <section class="panel" aria-labelledby="multiply-title">
+                    <h3 id="multiply-title">Multiplication: <code>*</code></h3>
+                    <div>Container 1</div>
+                    <div>Container 2</div>
+                    <div>Container 3</div>
+                    <p>Practice paragraph 1</p>
+                    <p>Practice paragraph 2</p>
+                    <p>Practice paragraph 3</p>
+                    <p>Practice paragraph 4</p>
+                    <p>Practice paragraph 5</p>
+                </section>
+                <section class="panel" aria-labelledby="text-title">
+                    <h3 id="text-title">Adding text: <code>{}</code></h3>
+                    <p><strong>Web Technologies</strong></p>
+                    <p>Welcome to my webpage.</p>
+                </section>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Numbering with <code>$</code></h2>
+            <div class="practice-grid">
+                <div class="panel">
+                    <h3>Numbered Classes</h3>
+                    <ul>
+                        <li class="item1">Item 1</li>
+                        <li class="item2">Item 2</li>
+                        <li class="item3">Item 3</li>
+                        <li class="item4">Item 4</li>
+                        <li class="item5">Item 5</li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <h3>Numbered Text</h3>
+                    <ul>
+                        <li>Menu 1</li>
+                        <li>Menu 2</li>
+                        <li>Menu 3</li>
+                        <li>Menu 4</li>
+                        <li>Menu 5</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Navigation with Links</h2>
+            <nav aria-label="Numbered link demonstration">
+                <ul>
+                    <li><a href="#home">Menu 1</a></li>
+                    <li><a href="#about">Menu 2</a></li>
+                    <li><a href="#services">Menu 3</a></li>
+                    <li><a href="#projects">Menu 4</a></li>
+                    <li><a href="#contact">Menu 5</a></li>
+                </ul>
+            </nav>
+            <h3>Part 7 Navigation Challenge</h3>
+            <nav aria-label="Part 7 navigation challenge">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="contact" class="panel">
+            <h2>Attributes with <code>[]</code></h2>
+            <div class="field"><label for="attribute-text">Text input</label><input type="text" id="attribute-text"></div>
+            <div class="field"><label for="attribute-name">Name</label><input type="text" id="attribute-name" placeholder="Enter your name" autocomplete="name"></div>
+            <div class="field"><label for="attribute-email">Email</label><input type="email" id="attribute-email" placeholder="Enter your email" autocomplete="email"></div>
+            <img src="images/profile.svg" alt="Ivan Dave Mendiola initials image" class="profile" width="240" height="240" loading="lazy">
+            <p class="form-note">This initials image is a placeholder for my own profile photo.</p>
+            <p><a href="https://www.google.com">Google</a></p>
+            <a href="index.html">Return to the laboratory</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Ivan Dave Mendiola</p>
+    </footer>
+</body>
+</html>

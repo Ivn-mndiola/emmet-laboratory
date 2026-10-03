@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML | Ivan Dave Mendiola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <h1>My Semantic Website</h1>
+        <p>Using semantic elements to organize my page.</p>
+    </header>
+    <nav aria-label="Semantic page navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project-notes">Projects</a></li>
+            <li><a href="#learning-notes">Learning Notes</a></li>
+            <li><a href="portfolio.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="semantic-layout">
+            <section id="project-notes" aria-labelledby="projects-title">
+                <h2 id="projects-title">My Project Notes</h2>
+                <article id="library-project" class="card">
+                    <span class="tag">Capstone concept</span>
+                    <h3>Library Peer Learning Room Reservation</h3>
+                    <p>My capstone idea is a website for booking peer learning rooms and checking available dates and times.</p>
+                    <p>It will also include room usage analytics to help librarians monitor reservations.</p>
+                    <a href="portfolio.html#projects">Back to portfolio projects</a>
+                </article>
+                <article id="kwarto-project" class="card">
+                    <span class="tag">Web coursework</span>
+                    <h3>The Kwarto</h3>
+                    <p>The Kwarto is a Baguio condo booking landing page. It presents room photos, amenities, and stay information in one place.</p>
+                    <p>This project helps me practice semantic HTML, CSS layouts, and JavaScript interactions.</p>
+                    <a href="portfolio.html#projects">Back to portfolio projects</a>
+                </article>
+                <article id="game-project" class="card">
+                    <span class="tag">Learning project</span>
+                    <h3>Game Development Practice</h3>
+                    <p>I am interested in game development and use programming exercises to practice game logic, player actions, and scoring.</p>
+                    <p>My goal is to improve my programming skills and learn how to create enjoyable games.</p>
+                    <a href="portfolio.html#projects">Back to portfolio projects</a>
+                </article>
+            </section>
+            <aside id="learning-notes" aria-labelledby="notes-title">
+                <h2 id="notes-title">Learning Notes</h2>
+                <p>Semantic HTML explains the purpose of each part of a page.</p>
+                <ul>
+                    <li><strong>header</strong> introduces a page or section.</li>
+                    <li><strong>nav</strong> groups navigation links.</li>
+                    <li><strong>main</strong> holds the main content.</li>
+                    <li><strong>section</strong> groups related content.</li>
+                    <li><strong>article</strong> holds a self-contained item.</li>
+                    <li><strong>aside</strong> adds related information.</li>
+                    <li><strong>footer</strong> holds closing information.</li>
+                </ul>
+            </aside>
+        </div>
+        <section aria-labelledby="complex-title">
+            <h2 id="complex-title">Complex Emmet Example</h2>
+            <p>This abbreviation creates a container, a header, a heading, a paragraph, and a navigation menu with four links.</p>
+            <pre><code>div.container&gt;header&gt;h1{My Portfolio}+p{Web Developer}+nav&gt;ul&gt;li*4&gt;a{Menu $}</code></pre>
+            <p>The navigation is inside the header because <code>+</code> keeps it at the heading and paragraph level.</p>
+            <details>
+                <summary>View a working version of the structure</summary>
+                <div class="container demo-portfolio">
+                    <header>
+                        <h3>My Portfolio</h3>
+                        <p>Web Developer</p>
+                        <nav aria-label="Complex abbreviation demonstration">
+                            <ul>
+                                <li><a href="portfolio.html#home">Menu 1</a></li>
+                                <li><a href="portfolio.html#about">Menu 2</a></li>
+                                <li><a href="portfolio.html#skills">Menu 3</a></li>
+                                <li><a href="portfolio.html#projects">Menu 4</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </details>
+            <a href="index.html">Return to the laboratory</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Ivan Dave Mendiola</p>
+    </footer>
+</body>
+</html>

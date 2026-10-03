@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form | Ivan Dave Mendiola</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="forms.js" defer="defer"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Student registration using HTML form elements.</p>
+    </header>
+    <nav aria-label="Laboratory navigation">
+        <ul>
+            <li><a href="index.html">Laboratory Home</a></li>
+            <li><a href="portfolio.html">Student Portfolio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section aria-labelledby="register-title">
+            <h2 id="register-title">Registration Details</h2>
+            <p id="registration-note" class="form-note">Fields marked with * are required. This practice form does not save information.</p>
+            <form action="#" id="student-registration" class="panel" method="post" aria-describedby="registration-note">
+                <div class="form-grid">
+                    <div class="field"><label for="student-id">Student ID *</label><input type="text" id="student-id" name="student_id" placeholder="Enter your student ID" required=""></div>
+                    <div class="field"><label for="full-name">Full Name *</label><input type="text" id="full-name" name="full_name" placeholder="Enter your full name" autocomplete="name" required=""></div>
+                    <div class="field"><label for="student-email">Email *</label><input type="email" id="student-email" name="email" placeholder="Enter your email" autocomplete="email" required=""></div>
+                    <div class="field"><label for="student-password">Password *</label><input type="password" id="student-password" name="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" aria-describedby="password-help" required=""><small id="password-help" class="form-note">Use a sample password.</small></div>
+                    <fieldset class="full-width">
+                        <legend>Gender *</legend>
+                        <div class="choices"><label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male" required=""> Male</label><label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female"> Female</label><label for="gender-private"><input type="radio" id="gender-private" name="gender" value="prefer-not-to-say"> Prefer not to say</label></div>
+                    </fieldset>
+                    <div class="field full-width"><label for="course">Course *</label>
+                        <select name="course" id="course" required="">
+                            <option value="" selected="selected" disabled="disabled">Select your course</option>
+                            <option value="BSIT">BS Information Technology</option>
+                            <option value="BSCS">BS Computer Science</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <fieldset class="full-width">
+                        <legend>Hobbies</legend>
+                        <div class="choices"><label for="hobby-gaming"><input type="checkbox" id="hobby-gaming" name="hobbies" value="gaming"> Gaming</label><label for="hobby-music"><input type="checkbox" id="hobby-music" name="hobbies" value="music"> Music</label><label for="hobby-rides"><input type="checkbox" id="hobby-rides" name="hobbies" value="rides"> Going on rides</label><label for="hobby-reading"><input type="checkbox" id="hobby-reading" name="hobbies" value="reading"> Reading</label></div>
+                    </fieldset>
+                    <div class="field full-width"><label for="address">Address *</label><textarea name="address" id="address" rows="3" placeholder="Enter your address" autocomplete="street-address" required=""></textarea></div>
+                    <div class="full-width"><input type="submit" value="Submit Registration"></div>
+                </div>
+                <p id="registration-status" class="form-status" role="status" tabindex="-1"></p>
+                <noscript>
+                    <p>Enable JavaScript to check the form.</p>
+                </noscript>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Ivan Dave Mendiola</p>
+    </footer>
+</body>
+</html>

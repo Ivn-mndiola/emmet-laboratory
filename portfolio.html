@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student portfolio of Ivan Dave Mendiola, a BSIT student learning web and game development.">
+    <title>Ivan Dave Mendiola | Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="forms.js" defer="defer"></script>
+</head>
+<body>
+    <header id="home">
+        <h1>Ivan Dave Mendiola</h1>
+        <p class="lead">BSIT student at the University of the Cordilleras.</p>
+        <a href="#projects" class="button">My Projects</a>
+    </header>
+    <nav aria-label="Portfolio navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" aria-labelledby="about-title">
+            <div class="intro-layout">
+                <img src="images/profile.svg" alt="Ivan Dave Mendiola initials image" class="profile" width="240" height="240">
+                <div>
+                    <span class="tag">Baguio City / BSIT</span>
+                    <h2 id="about-title">About Me</h2>
+                    <p>I'm Ivan Dave Mendiola from Baguio City. I'm taking BSIT at the University of the Cordilleras because I want to build a career in technology.</p>
+                    <p>I like music, playing games, and going on rides. I am interested in web and game development.</p>
+                    <p class="muted">I want to keep learning and improve my skills.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">My Skills</h2>
+            <p>These are the languages and tools I am learning.</p>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">My Projects</h2>
+            <p>Some of my school projects and ideas.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="tag">Capstone concept</span>
+                    <h3>Library Room Reservation</h3>
+                    <p>A capstone idea for booking library peer learning rooms, checking available schedules, and viewing room usage.</p>
+                    <a href="05-semantic.html#library-project">View project details</a>
+                </article>
+                <article class="project-card">
+                    <span class="tag">Web coursework</span>
+                    <h3>The Kwarto</h3>
+                    <p>A website for a condo in Baguio that shows its photos, amenities, and booking details.</p>
+                    <a href="05-semantic.html#kwarto-project">View project details</a>
+                </article>
+                <article class="project-card">
+                    <span class="tag">Learning project</span>
+                    <h3>Game Development Practice</h3>
+                    <p>Programming exercises to help me learn game logic and improve my skills.</p>
+                    <a href="05-semantic.html#game-project">View project details</a>
+                </article>
+            </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact Me</h2>
+            <p id="contact-note" class="form-note">All fields are required. This practice form does not send messages.</p>
+            <form action="#" id="contact-form" class="panel" method="post" aria-describedby="contact-note">
+                <div class="form-grid">
+                    <div class="field"><label for="contact-name">Name</label><input type="text" id="contact-name" name="name" placeholder="Enter your name" autocomplete="name" required=""></div>
+                    <div class="field"><label for="contact-email">Email</label><input type="email" id="contact-email" name="email" placeholder="Enter your email" autocomplete="email" required=""></div>
+                    <div class="field full-width"><label for="contact-subject">Subject</label><input type="text" id="contact-subject" name="subject" placeholder="Enter the subject" required=""></div>
+                    <div class="field full-width"><label for="contact-message">Message</label><textarea name="message" id="contact-message" rows="5" placeholder="Write your message" required=""></textarea></div>
+                    <div class="full-width"><button type="submit">Submit Message</button></div>
+                </div>
+                <p id="contact-status" class="form-status" role="status" tabindex="-1"></p>
+                <noscript>
+                    <p>Enable JavaScript to check the form.</p>
+                </noscript>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Ivan Dave Mendiola · <a href="index.html">Emmet Laboratory</a></p>
+    </footer>
+</body>
+</html>
